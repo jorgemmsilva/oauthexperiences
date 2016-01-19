@@ -54,7 +54,7 @@ class SessionsController < ApplicationController
   end
 
    def validate_post
-    raise request.inspect
+    raise request.env.inspect
     render plain: "OK"
   end
 

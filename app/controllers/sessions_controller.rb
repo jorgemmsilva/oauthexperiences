@@ -60,8 +60,8 @@ private
                   &amp;display=popup
                   &amp;caption=An%20example%20caption
                   &amp;link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F
-                  &amp;redirect_uri=http://127.0.0.1:8080/"
-    RestClient.post(request_url ,{:client_options => {:ssl => {:ca_file => ENV['SSL_CERT_FILE'] +"/ca-bundle.crt"}}}) 
+                  &amp;redirect_uri=https://pacific-brushlands-9551.herokuapp.com"
+    RestClient.post(request_url ,{}) 
     #RestClient::Request.execute(:url => request_url, :method => :post, :verify_ssl => false)
 
     # RestClient::Resource.new(

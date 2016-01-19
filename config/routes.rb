@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
 
   get '/post/', to: 'sessions#post'
-
+  get '/post/success', to: 'sessions#successful_post'
 
 
 

@@ -56,11 +56,9 @@ class SessionsController < ApplicationController
 private
   
   def post_facebook
-    request_url = "https://www.facebook.com/dialog/share?
-  app_id=#{ENV['FACEBOOK_KEY']}
-  &display=popup
-  &href=https://pacific-brushlands-9551.herokuapp.com
-  &redirect_uri=https://pacific-brushlands-9551.herokuapp.com"
+
+    params = "app_id=#{ENV['FACEBOOK_KEY']}&display=popup&href=https://pacific-brushlands-9551.herokuapp.com&redirect_uri=https://pacific-brushlands-9551.herokuapp.com"
+    request_url = "https://www.facebook.com/dialog/share?" + CGI::escapeHTML(params)
 
     #request_url = "https://www.facebook.com/dialog/feed?app_id=#{ENV['FACEBOOK_KEY']}&display=popup&caption=https://pacific-brushlands-9551.herokuapp.com&link=https://pacific-brushlands-9551.herokuapp.com&redirect_uri=https://pacific-brushlands-9551.herokuapp.com"
     #RestClient.post(request_url ,{:client_options => {:ssl => {:ca_file => ENV['SSL_CERT_FILE'] +"/ca-bundle.crt"}}}) 

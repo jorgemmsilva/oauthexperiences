@@ -61,8 +61,8 @@ private
     request_url = "https://www.facebook.com/dialog/share?" + CGI::escapeHTML(params)
 
     #request_url = "https://www.facebook.com/dialog/feed?app_id=#{ENV['FACEBOOK_KEY']}&display=popup&caption=https://pacific-brushlands-9551.herokuapp.com&link=https://pacific-brushlands-9551.herokuapp.com&redirect_uri=https://pacific-brushlands-9551.herokuapp.com"
-    #RestClient.post(request_url ,{:client_options => {:ssl => {:ca_file => ENV['SSL_CERT_FILE'] +"/ca-bundle.crt"}}}) 
-    RestClient::Request.execute(:url => request_url, :method => :post, :verify_ssl => false)
+    RestClient.post(request_url ,{}) 
+    #RestClient::Request.execute(:url => request_url, :method => :post, :verify_ssl => false)
 
     # RestClient::Resource.new(
     #   request_url,

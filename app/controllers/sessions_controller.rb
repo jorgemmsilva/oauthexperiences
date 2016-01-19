@@ -53,30 +53,27 @@ class SessionsController < ApplicationController
     end
   end
 
+   def validate_post
+    raise request.inspect
+    render plain: "OK"
+  end
+
   def successful_post
     render plain: "OK"
   end
+
+
 
 private
   
   def post_facebook
 
     href = "google.com"
-    redirect_uri = "https://pacific-brushlands-9551.herokuapp.com/post/success"
+    redirect_uri = "https://pacific-brushlands-9551.herokuapp.com/post/validate"
     params = "app_id=#{ENV['FACEBOOK_KEY']}&display=popup&href=#{href}&redirect_uri=#{redirect_uri}"
     request_url = "https://www.facebook.com/dialog/share?" + params
 
-    RestClient.post(request_url , {})
-
-
-    render plain: "OK"
-
-    # RestClient.post(request_url ,{
-    #             app_id: ENV['FACEBOOK_KEY'], 
-    #             display: "popup",
-    #             href: href, 
-    #             redirect_uri: redirect_uri
-    #             })
+    redirect_to request_url
 
   end
 

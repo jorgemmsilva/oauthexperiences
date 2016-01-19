@@ -66,7 +66,7 @@ private
     params = "app_id=#{ENV['FACEBOOK_KEY']}&display=popup&href=#{href}&redirect_uri=#{redirect_uri}"
     request_url = "https://www.facebook.com/dialog/share?" + params
 
-    RestClient.post(request_url , {})
+    RestClient.get(request_url , {})
     # RestClient.post(request_url ,{
     #             app_id: ENV['FACEBOOK_KEY'], 
     #             display: "popup",

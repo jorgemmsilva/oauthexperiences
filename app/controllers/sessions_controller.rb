@@ -64,9 +64,14 @@ private
     href = "google.com"
     redirect_uri = "https://pacific-brushlands-9551.herokuapp.com/post/success"
     params = "app_id=#{ENV['FACEBOOK_KEY']}&display=popup&href=#{href}&redirect_uri=#{redirect_uri}"
-    request_url = "https://www.facebook.com/dialog/share?" + CGI::escapeHTML(params)
-    #raise request_url
-    RestClient.post(request_url ,{})
+    request_url = "https://www.facebook.com/dialog/share?"# + params
+
+    RestClient.post(request_url ,{
+                app_id: ENV['FACEBOOK_KEY'], 
+                display: "popup",
+                href: href, 
+                redirect_uri: redirect_uri
+                })
 
   end
 

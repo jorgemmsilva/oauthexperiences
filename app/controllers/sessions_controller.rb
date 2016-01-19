@@ -53,10 +53,19 @@ class SessionsController < ApplicationController
     end
   end
 
-   def validate_post
-    raise response.inspect
-    raise request.env.inspect
-    render plain: "OK"
+  def validate_post
+    case current_user.provider
+      when 'twitter'
+        raise 'twitter'
+      when 'facebook'
+        validate_facebook
+      when 'google'
+        raise 'google'
+      when 'linkedin'
+        raise 'linkedin'
+      else
+        raise 'else'
+    end
   end
 
   def successful_post
@@ -76,6 +85,11 @@ private
 
     redirect_to request_url
 
+  end
+
+  def validate_facebook
+    profile = RestClient.get(current_user.url)
+    raise profile.inspect
   end
 
 

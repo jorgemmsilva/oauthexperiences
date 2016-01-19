@@ -58,6 +58,7 @@ class SessionsController < ApplicationController
       when 'twitter'
         raise 'twitter'
       when 'facebook'
+        sleep 10
         validate_facebook
       when 'google'
         raise 'google'

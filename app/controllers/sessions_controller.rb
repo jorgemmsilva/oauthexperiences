@@ -56,11 +56,7 @@ class SessionsController < ApplicationController
 private
   
   def post_facebook
-    request_url = "https://www.facebook.com/dialog/feed?app_id=#{ENV['FACEBOOK_KEY']}
-                  &amp;display=popup
-                  &amp;caption=An%20example%20caption
-                  &amp;link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F
-                  &amp;redirect_uri=https://pacific-brushlands-9551.herokuapp.com"
+    request_url = "https://www.facebook.com/dialog/feed?app_id=#{ENV['FACEBOOK_KEY']}&amp;display=popup&amp;caption=An%20example%20caption&amp;link=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F&amp;redirect_uri=https://pacific-brushlands-9551.herokuapp.com"
     #RestClient.post(request_url ,{:client_options => {:ssl => {:ca_file => ENV['SSL_CERT_FILE'] +"/ca-bundle.crt"}}}) 
     RestClient::Request.execute(:url => request_url, :method => :post, :verify_ssl => false)
 

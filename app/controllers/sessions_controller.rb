@@ -62,37 +62,11 @@ private
   def post_facebook
 
     href = "google.com"
-    params = "app_id=#{ENV['FACEBOOK_KEY']}&display=popup&href=#{href}&redirect_uri="
+    redirect_uri = "https://pacific-brushlands-9551.herokuapp.com/post/success"
+    params = "app_id=#{ENV['FACEBOOK_KEY']}&display=popup&href=#{href}&redirect_uri=#{redirect_uri}"
     request_url = "https://www.facebook.com/dialog/share?" + CGI::escapeHTML(params)
-    raise request_url
-    #request_url = "https://www.facebook.com/dialog/feed?app_id=#{ENV['FACEBOOK_KEY']}&display=popup&caption=https://pacific-brushlands-9551.herokuapp.com&link=https://pacific-brushlands-9551.herokuapp.com&redirect_uri=https://pacific-brushlands-9551.herokuapp.com"
-    RestClient.post(request_url ,{}) 
-    #RestClient::Request.execute(:url => request_url, :method => :post, :verify_ssl => false)
-
-    # RestClient::Resource.new(
-    #   request_url,
-    #   :ssl_client_cert  =>  OpenSSL::X509::Certificate.new(File.read("#{ENV['SSL_CERT_FILE']}/cert.pem")),
-    #   :ssl_ca_file      =>  "#{ENV['SSL_CERT_FILE']}/ca_certificate.pem",
-    #   :verify_ssl       =>  OpenSSL::SSL::VERIFY_PEER
-    # ).get
-
-
-#:ssl => {:ca_file => ENV['SSL_CERT_FILE'] +"/ca-bundle.crt"}
-
-    # dummy_response = RestClient.post("https://www.facebook.com/dialog/feed", 
-    #                 {
-    #                   verify_ssl: false,
-    #                   display: 'popup',
-    #                   caption: 'example caption',
-    #                   link: 'https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2F',
-    #                   redirect_uri: 'http://127.0.0.1:8080/',
-    #                   :client_options => {
-    #           :ssl => {
-    #             :ca_file => ENV['SSL_CERT_FILE'] +"/ca-bundle.crt",
-    #             :ca_path => ENV['SSL_CERT_FILE']
-    #           }
-    #         }
-    #                 })
+    #raise request_url
+    RestClient.post(request_url ,{})
 
   end
 

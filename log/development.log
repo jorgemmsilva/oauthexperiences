@@ -25040,3 +25040,1183 @@ Processing by SessionsController#post as HTML
   [1m[35mUser Load (2.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
 Redirected to https://www.facebook.com/dialog/share?app_id=795468393896951&display=popup&href=google.com&redirect_uri=https://pacific-brushlands-9551.herokuapp.com/post/success
 Completed 403 Forbidden in 39ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/post/" for 127.0.0.1 at 2016-01-19 17:51:18 +0000
+Processing by SessionsController#post as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Redirected to https://www.facebook.com/dialog/share?app_id=795468393896951&display=popup&href=google.com&redirect_uri=https://pacific-brushlands-9551.herokuapp.com/post/validate
+Completed 403 Forbidden in 77ms (ActiveRecord: 6.7ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-01-19 17:52:30 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AhZzR88Gp3jPKpSKWInCYwAr8qDBZAr7pCVt8Dcyw/SOVVNFNf2uBcEmTHosB/etNw0IUYXAaG9GMNth7er4xw=="}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Redirected to http://127.0.0.1:8080/
+Completed 302 Found in 55ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-19 17:52:30 +0000
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (19.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 147ms (Views: 136.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2016-01-19 17:52:31 +0000
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2016-01-19 17:52:31 +0000
+
+
+Started GET "/assets/bootstrap/theme" for 127.0.0.1 at 2016-01-19 17:52:31 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/theme"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (130.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (95.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (7.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (205.8ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2016-01-19 17:52:34 +0000
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2016-01-19 17:52:34 +0000
+
+
+Started GET "/auth/facebook/callback?code=AQCVVNIthaYhG5--FDPc7VSU4MDnA_JzKM8UucUQtLoJr2qqeN9mZJlDfV8uLdv_osr7AlxolHZzqk-X7ydSSrTAFK0a8TfFNG11tapRI6wjy0srA965Jb-v1hB0WzsSQsrRI0VMOhs67OA7BIqaP75xhvCVnUQv5AxFxRn4rIoavx6iI5UWWrsgvrpmsUzJHTGjz5VSQr7AqCCvNyDJ0jqlp7Cf2Fa8QAB_mV70hfRDaBSdz-9ae5rTh96kwUSLY4H4QsC9Hqb2NO1neNFodI5fmYrvdH5OY5bPSR_rlMeyqjYBH_lCrpXjTWr0x0pKW22yyEn-joJxI669tm78GBDkh5Gu1gLGQmK15NWf2-DicQ&state=4b0e1695d9e7cc5140a2f298251b2b2671ec36f779148d8b" for 127.0.0.1 at 2016-01-19 17:52:34 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQCVVNIthaYhG5--FDPc7VSU4MDnA_JzKM8UucUQtLoJr2qqeN9mZJlDfV8uLdv_osr7AlxolHZzqk-X7ydSSrTAFK0a8TfFNG11tapRI6wjy0srA965Jb-v1hB0WzsSQsrRI0VMOhs67OA7BIqaP75xhvCVnUQv5AxFxRn4rIoavx6iI5UWWrsgvrpmsUzJHTGjz5VSQr7AqCCvNyDJ0jqlp7Cf2Fa8QAB_mV70hfRDaBSdz-9ae5rTh96kwUSLY4H4QsC9Hqb2NO1neNFodI5fmYrvdH5OY5bPSR_rlMeyqjYBH_lCrpXjTWr0x0pKW22yyEn-joJxI669tm78GBDkh5Gu1gLGQmK15NWf2-DicQ", "state"=>"4b0e1695d9e7cc5140a2f298251b2b2671ec36f779148d8b", "provider"=>"facebook"}
+  [1m[36mUser Load (3.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."uid" = ? AND "users"."provider" = ? LIMIT 1[0m  [["uid", "10206446938306403"], ["provider", "facebook"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:8080/
+Completed 302 Found in 34ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-19 17:52:36 +0000
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2016-01-19 17:52:36 +0000
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2016-01-19 17:52:36 +0000
+
+
+Started GET "/assets/bootstrap/theme" for 127.0.0.1 at 2016-01-19 17:52:36 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/theme"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (99.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.1ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (138.8ms)
+
+
+Started GET "/post/" for 127.0.0.1 at 2016-01-19 17:52:41 +0000
+Processing by SessionsController#post as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Redirected to https://www.facebook.com/dialog/share?app_id=795468393896951&display=popup&href=google.com&redirect_uri=https://pacific-brushlands-9551.herokuapp.com/post/validate
+Completed 403 Forbidden in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap/theme" for 127.0.0.1 at 2016-01-19 17:52:44 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/theme"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (120.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (3.1ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (82.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (2.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (170.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-19 18:10:02 +0000
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered pages/index.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 243ms (Views: 227.0ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2016-01-19 18:10:03 +0000
+
+
+Started GET "/assets/bootstrap/theme" for 127.0.0.1 at 2016-01-19 18:10:03 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/theme"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (129.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (79.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (4.0ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (225.5ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2016-01-19 18:10:03 +0000
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-01-19 18:10:06 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"O8yzTgBHc7VyI3WIb9kiEm+5CTVZ3WSP2njiheTSWxS3j5NM+rx6yHwvrXgbVxfcWJ/zxB15Bhs4bVQUPgpgJw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Redirected to http://127.0.0.1:8080/
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-19 18:10:06 +0000
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (2.6ms)
+  [1m[36mCACHE (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 81ms (Views: 79.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2016-01-19 18:10:06 +0000
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2016-01-19 18:10:06 +0000
+
+
+Started GET "/assets/bootstrap/theme" for 127.0.0.1 at 2016-01-19 18:10:06 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/theme"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (113.1ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (4.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (71.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (157.9ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2016-01-19 18:10:08 +0000
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2016-01-19 18:10:08 +0000
+
+
+Started GET "/auth/facebook/callback?code=AQBFVdh6m_dr6y6Rq0mLwr0GtR9kMNydXxD3lUyuD4HXqYVzVo1iv5exKrF2t_HWI1Q59QRcz0EuOX62ORRTAi2Z5XQmmPsQTt0F7FRcvJlsE86zcEg47StvxDJrK_akrK0zGzerZesHekohR8sIUKiiOUWWo8NWuCXkKzKKquW4Tr-chbZ4ku0QR0dTqRdJU-0w98zfROOQo2MmRgR71Rcp_dIKQjeYVXBJiWnWZRq_Rs462gcOz9rZvpdpPd-2qb7OtdYfAeL9uP3_0HOjiPMqbylL8vCRg_lfJZoG_UVZMjjv-L-tRKOmkCu23RmORcRL7R8zEDVWV_TX4xrbfthnQHNszt35lW8Ohh0x_8hlrg&state=d58d8c4837ea7d4cd8d6b255cff688c3469e1c50c7d776af" for 127.0.0.1 at 2016-01-19 18:10:09 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBFVdh6m_dr6y6Rq0mLwr0GtR9kMNydXxD3lUyuD4HXqYVzVo1iv5exKrF2t_HWI1Q59QRcz0EuOX62ORRTAi2Z5XQmmPsQTt0F7FRcvJlsE86zcEg47StvxDJrK_akrK0zGzerZesHekohR8sIUKiiOUWWo8NWuCXkKzKKquW4Tr-chbZ4ku0QR0dTqRdJU-0w98zfROOQo2MmRgR71Rcp_dIKQjeYVXBJiWnWZRq_Rs462gcOz9rZvpdpPd-2qb7OtdYfAeL9uP3_0HOjiPMqbylL8vCRg_lfJZoG_UVZMjjv-L-tRKOmkCu23RmORcRL7R8zEDVWV_TX4xrbfthnQHNszt35lW8Ohh0x_8hlrg", "state"=>"d58d8c4837ea7d4cd8d6b255cff688c3469e1c50c7d776af", "provider"=>"facebook"}
+Redirected to http://127.0.0.1:8080/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-19 18:10:09 +0000
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2016-01-19 18:10:10 +0000
+
+
+Started GET "/assets/bootstrap/theme" for 127.0.0.1 at 2016-01-19 18:10:10 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/theme"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (90.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (62.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (141.3ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2016-01-19 18:10:10 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-19 18:10:32 +0000
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (2.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (14.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 84ms (Views: 79.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.self-734ca6ad3b4a6e573f262fd05d47d9d2d4830355aa0c0de2d7534769251f5087.css?body=1" for 127.0.0.1 at 2016-01-19 18:10:33 +0000
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-01-19 18:10:33 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-19 18:10:33 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-19 18:10:33 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-01-19 18:10:33 +0000
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2016-01-19 18:10:33 +0000
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2016-01-19 18:10:33 +0000
+
+
+Started GET "/assets/bootstrap/theme" for 127.0.0.1 at 2016-01-19 18:10:33 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/theme"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (101.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (76.1ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (175.5ms)
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-01-19 18:10:33 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-19 18:10:34 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-19 18:10:34 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-19 18:10:35 +0000
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2016-01-19 18:10:35 +0000
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2016-01-19 18:10:35 +0000
+
+
+Started GET "/assets/bootstrap/theme" for 127.0.0.1 at 2016-01-19 18:10:35 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/theme"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (141.4ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2016-01-19 18:10:36 +0000
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2016-01-19 18:10:36 +0000
+
+
+Started GET "/auth/facebook/callback?code=AQClYURpp7FN8ElwsehoXjOgtiMNHcjjZO3DuoXdw2XCf8JMge49Hg55xBfYk9nost_V4coP1t1I15WbKX7FeRK5I5sBVCEVYTIjsljZF7MCWA4MDxeWSrimuFPjYsX62vw34Tot87aE7KOy39ndFOBqAaR0lmATRa5c8P8Nf8OJss0TkwKemHUmRKqJ17epmujsMlJ6gJJIlBLzlXyCQEsK43BXsp3e5-Yqkm6_RYQDjxlrS4oloCyDvsj_EevPO9ryZCgw020MjGFd4kARX55fiv-opdJLJed5eD89vlk-ZDUsKt5OvuxdFm6zpj699_Y17SJ1nKsV8jYnU5OcVfFN4usuL6RzSnoSRMz7LWgfkQ&state=2bb8b3832c2a81fad57b30e4e35c44967f5ef964256b57bd" for 127.0.0.1 at 2016-01-19 18:10:37 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQClYURpp7FN8ElwsehoXjOgtiMNHcjjZO3DuoXdw2XCf8JMge49Hg55xBfYk9nost_V4coP1t1I15WbKX7FeRK5I5sBVCEVYTIjsljZF7MCWA4MDxeWSrimuFPjYsX62vw34Tot87aE7KOy39ndFOBqAaR0lmATRa5c8P8Nf8OJss0TkwKemHUmRKqJ17epmujsMlJ6gJJIlBLzlXyCQEsK43BXsp3e5-Yqkm6_RYQDjxlrS4oloCyDvsj_EevPO9ryZCgw020MjGFd4kARX55fiv-opdJLJed5eD89vlk-ZDUsKt5OvuxdFm6zpj699_Y17SJ1nKsV8jYnU5OcVfFN4usuL6RzSnoSRMz7LWgfkQ", "state"=>"2bb8b3832c2a81fad57b30e4e35c44967f5ef964256b57bd", "provider"=>"facebook"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+RuntimeError (#<OmniAuth::AuthHash credentials=#<OmniAuth::AuthHash expires=true expires_at=1458391760 token="CAALTeWsMWZCcBAFDvwWJCeMKQiFVVgn4NTOwrecyY6INODS8ex67SqKVY9RkwTgqbTzZBlBsR1jJn5loUvBtOFGTAswKZBSwGXR24K41ql432eZANUIUtNBYZAWqO2vyqVuwQxJPzIJw1yQ03YJWJK7Knsmmt7zDfMRT6XIv34GjobGgTajn4GG2VzChR4o6n79m8J5glDwZDZD"> extra=#<OmniAuth::AuthHash raw_info=#<OmniAuth::AuthHash id="10206446938306403" link="https://www.facebook.com/app_scoped_user_id/10206446938306403/" name="Jorge Silva">> info=#<OmniAuth::AuthHash::InfoHash image="https://graph.facebook.com/10206446938306403/picture" name="Jorge Silva" urls=#<OmniAuth::AuthHash Facebook="https://www.facebook.com/app_scoped_user_id/10206446938306403/">> provider="facebook" uid="10206446938306403">):
+  app/controllers/sessions_controller.rb:16:in `create'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (55.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (128.9ms)
+
+
+Started GET "/auth/facebook/callback?code=AQClYURpp7FN8ElwsehoXjOgtiMNHcjjZO3DuoXdw2XCf8JMge49Hg55xBfYk9nost_V4coP1t1I15WbKX7FeRK5I5sBVCEVYTIjsljZF7MCWA4MDxeWSrimuFPjYsX62vw34Tot87aE7KOy39ndFOBqAaR0lmATRa5c8P8Nf8OJss0TkwKemHUmRKqJ17epmujsMlJ6gJJIlBLzlXyCQEsK43BXsp3e5-Yqkm6_RYQDjxlrS4oloCyDvsj_EevPO9ryZCgw020MjGFd4kARX55fiv-opdJLJed5eD89vlk-ZDUsKt5OvuxdFm6zpj699_Y17SJ1nKsV8jYnU5OcVfFN4usuL6RzSnoSRMz7LWgfkQ&state=2bb8b3832c2a81fad57b30e4e35c44967f5ef964256b57bd" for 127.0.0.1 at 2016-01-19 18:12:05 +0000
+
+OAuth2::Error (: 
+{"error":{"message":"This authorization code has been used.","type":"OAuthException","code":100,"fbtrace_id":"FrNa73CNKGR"}}):
+  oauth2 (1.0.0) lib/oauth2/client.rb:113:in `request'
+  oauth2 (1.0.0) lib/oauth2/client.rb:138:in `get_token'
+  oauth2 (1.0.0) lib/oauth2/strategy/auth_code.rb:29:in `get_token'
+  omniauth-oauth2 (1.3.1) lib/omniauth/strategies/oauth2.rb:93:in `build_access_token'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:114:in `build_access_token'
+  omniauth-oauth2 (1.3.1) lib/omniauth/strategies/oauth2.rb:77:in `callback_phase'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:71:in `block in callback_phase'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:135:in `with_authorization_code!'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:70:in `callback_phase'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/builder.rb:63:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.1ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (93.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (185.2ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2016-01-19 18:12:10 +0000
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2016-01-19 18:12:10 +0000
+
+
+Started GET "/auth/facebook/callback?code=AQBTb-sCIdvT-XhWtrAwAW_rAPNXESqibHxXrYDLl_IvBqt4Lo5vEQJvY6iVLkDtyhyBuGpfmJFqV7H00qwau0_IuAT-rQNc7BlRm_5n79xUjLNOftRFFyIohT3ys4tcVb9MpSRwLN4sQM6W4Y4J9U2D6VrDt8h8oVDApqqe93h_plwyMgrvaqDMHrGLE61TV2vyCa0KMIYevT-zIsnrDo41kviSBehBEVdweyMTDQDqQLLyuYcIONcowIF8jn0xJJVhLbUVA-jpfKIAGkfzFGryz209MB3E2SxGkJW15TDWhuhxbIC2Ra69VA4NMAoaxHXFRrpI2c2BXHdsNfTZGqDlhyUVpoiAjSP8XnfHICF22g&state=b9e703ae465ec52228343fcb0284e09132680f53164d8997" for 127.0.0.1 at 2016-01-19 18:12:10 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBTb-sCIdvT-XhWtrAwAW_rAPNXESqibHxXrYDLl_IvBqt4Lo5vEQJvY6iVLkDtyhyBuGpfmJFqV7H00qwau0_IuAT-rQNc7BlRm_5n79xUjLNOftRFFyIohT3ys4tcVb9MpSRwLN4sQM6W4Y4J9U2D6VrDt8h8oVDApqqe93h_plwyMgrvaqDMHrGLE61TV2vyCa0KMIYevT-zIsnrDo41kviSBehBEVdweyMTDQDqQLLyuYcIONcowIF8jn0xJJVhLbUVA-jpfKIAGkfzFGryz209MB3E2SxGkJW15TDWhuhxbIC2Ra69VA4NMAoaxHXFRrpI2c2BXHdsNfTZGqDlhyUVpoiAjSP8XnfHICF22g", "state"=>"b9e703ae465ec52228343fcb0284e09132680f53164d8997", "provider"=>"facebook"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+RuntimeError (#<ActionDispatch::Request:0x007fcb9085ba98 @env={"GATEWAY_INTERFACE"=>"CGI/1.1", "PATH_INFO"=>"/auth/facebook/callback", "QUERY_STRING"=>"code=AQBTb-sCIdvT-XhWtrAwAW_rAPNXESqibHxXrYDLl_IvBqt4Lo5vEQJvY6iVLkDtyhyBuGpfmJFqV7H00qwau0_IuAT-rQNc7BlRm_5n79xUjLNOftRFFyIohT3ys4tcVb9MpSRwLN4sQM6W4Y4J9U2D6VrDt8h8oVDApqqe93h_plwyMgrvaqDMHrGLE61TV2vyCa0KMIYevT-zIsnrDo41kviSBehBEVdweyMTDQDqQLLyuYcIONcowIF8jn0xJJVhLbUVA-jpfKIAGkfzFGryz209MB3E2SxGkJW15TDWhuhxbIC2Ra69VA4NMAoaxHXFRrpI2c2BXHdsNfTZGqDlhyUVpoiAjSP8XnfHICF22g&state=b9e703ae465ec52228343fcb0284e09132680f53164d8997", "REMOTE_ADDR"=>"127.0.0.1", "REMOTE_HOST"=>"127.0.0.1", "REQUEST_METHOD"=>"GET", "REQUEST_URI"=>"http://127.0.0.1:8080/auth/facebook/callback?code=AQBTb-sCIdvT-XhWtrAwAW_rAPNXESqibHxXrYDLl_IvBqt4Lo5vEQJvY6iVLkDtyhyBuGpfmJFqV7H00qwau0_IuAT-rQNc7BlRm_5n79xUjLNOftRFFyIohT3ys4tcVb9MpSRwLN4sQM6W4Y4J9U2D6VrDt8h8oVDApqqe93h_plwyMgrvaqDMHrGLE61TV2vyCa0KMIYevT-zIsnrDo41kviSBehBEVdweyMTDQDqQLLyuYcIONcowIF8jn0xJJVhLbUVA-jpfKIAGkfzFGryz209MB3E2SxGkJW15TDWhuhxbIC2Ra69VA4NMAoaxHXFRrpI2c2BXHdsNfTZGqDlhyUVpoiAjSP8XnfHICF22g&state=b9e703ae465ec52228343fcb0284e09132680f53164d8997", "SCRIPT_NAME"=>"", "SERVER_NAME"=>"127.0.0.1", "SERVER_PORT"=>"8080", "SERVER_PROTOCOL"=>"HTTP/1.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/2.2.1/2015-02-26)", "HTTP_HOST"=>"127.0.0.1:8080", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "HTTP_UPGRADE_INSECURE_REQUESTS"=>"1", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36", "HTTP_REFERER"=>"http://127.0.0.1:8080/", "HTTP_ACCEPT_ENCODING"=>"gzip, deflate, sdch", "HTTP_ACCEPT_LANGUAGE"=>"en-US,en;q=0.8,pt-PT;q=0.6,pt;q=0.4", "HTTP_COOKIE"=>"_oauthapp_session=UzNTeTQxRWJSbS9nWXlKNjlObHRnNDQ4UHVsYllqYTBxMmhFRzd5VFdGcFBkNlVoc0wybHJjckM5bmM4WTRxMk50STZYZWJiNm9rbC9Ia1c4QUlic3lJNURLeFVZUFVTdUJjRVB0WWJHS0d6YmkzTUQwckVqdGtjL3dpV3lvamZGNm5yQTlJR0U4NE5Kb2lpcnRMM0p4TXg3dWduNUx4bHhnaStmRmxZQjhQWGdYNHcxTk1Iak5EQzlEMmxzdHltcXVPM0oxZTNTUFN3ME9XYmVieE53T3RWWGZyM0JlOFpjREhkUHdEbnoza3JkcURPL1ZCUEE3QmZ5Mm96RUhnQmVjcEQveVY0ZTlnTmVmd1krOFhnRE85VHR0c0g5OEJ2eEFSWCtaUzhkVGtnQ3p2QXYyN1VGRFNjdkdLZXBnZVl2V3o3WTNYNndrUFcyTTBEaWh4WEJvWE4wd1p6OFRjanBTVzNKbTllUjUxcTBBV1RROU5pWU93QmZRQTZadC8yclM3T1ZWYkM0OUdLTmQ2TE10blpCZz09LS11V2FRemR1NXlCWlhESTFGVlRkZDBnPT0%3D--d2d9ad784b6169b3e5baf6c57d1ff0c74003167a", "rack.version"=>[1, 3], "rack.input"=>#<StringIO:0x007fcb91312450>, "rack.errors"=>#<IO:<STDERR>>, "rack.multithread"=>false, "rack.multiprocess"=>false, "rack.run_once"=>false, "rack.url_scheme"=>"http", "rack.hijack?"=>true, "rack.hijack"=>#<Proc:0x007fcb91312338@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:76 (lambda)>, "rack.hijack_io"=>nil, "HTTP_VERSION"=>"HTTP/1.1", "REQUEST_PATH"=>"/auth/facebook/callback", "ORIGINAL_FULLPATH"=>"/auth/facebook/callback?code=AQBTb-sCIdvT-XhWtrAwAW_rAPNXESqibHxXrYDLl_IvBqt4Lo5vEQJvY6iVLkDtyhyBuGpfmJFqV7H00qwau0_IuAT-rQNc7BlRm_5n79xUjLNOftRFFyIohT3ys4tcVb9MpSRwLN4sQM6W4Y4J9U2D6VrDt8h8oVDApqqe93h_plwyMgrvaqDMHrGLE61TV2vyCa0KMIYevT-zIsnrDo41kviSBehBEVdweyMTDQDqQLLyuYcIONcowIF8jn0xJJVhLbUVA-jpfKIAGkfzFGryz209MB3E2SxGkJW15TDWhuhxbIC2Ra69VA4NMAoaxHXFRrpI2c2BXHdsNfTZGqDlhyUVpoiAjSP8XnfHICF22g&state=b9e703ae465ec52228343fcb0284e09132680f53164d8997", "ORIGINAL_SCRIPT_NAME"=>"", "action_dispatch.routes"=>#<ActionDispatch::Routing::RouteSet:0x007fcb891c9fd8>, "action_dispatch.parameter_filter"=>[:password], "action_dispatch.redirect_filter"=>[], "action_dispatch.secret_token"=>nil, "action_dispatch.secret_key_base"=>"5d8d3d0aba1bc30360ee371e2a65cd6233620fd9f6cd7536142f2e4ec0981f510a4f5d9c337a7eb4a48f108afc504ddf17a142dc269567ae1055785b71c89b30", "action_dispatch.show_exceptions"=>true, "action_dispatch.show_detailed_exceptions"=>true, "action_dispatch.logger"=>#<ActiveSupport::Logger:0x007fcb89e71c40 @progname=nil, @level=0, @default_formatter=#<Logger::Formatter:0x007fcb89e71ba0 @datetime_format=nil>, @formatter=#<ActiveSupport::Logger::SimpleFormatter:0x007fcb8aa23c78 @datetime_format=nil>, @logdev=#<Logger::LogDevice:0x007fcb89e71b50 @shift_size=nil, @shift_age=nil, @filename=nil, @dev=#<File:/Users/jorgesilva/Dev/oauthapp/log/development.log>, @mutex=#<Logger::LogDevice::LogDeviceMutex:0x007fcb89e71b00 @mon_owner=nil, @mon_count=0, @mon_mutex=#<Mutex:0x007fcb89e71ab0>>>>, "action_dispatch.backtrace_cleaner"=>#<Rails::BacktraceCleaner:0x007fcb89f08758 @filters=[#<Proc:0x007fcb89f08550@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.5/lib/rails/backtrace_cleaner.rb:14>, #<Proc:0x007fcb89f08528@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.5/lib/rails/backtrace_cleaner.rb:15>, #<Proc:0x007fcb89f08500@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.5/lib/rails/backtrace_cleaner.rb:16>, #<Proc:0x007fcb89f08050@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.5/lib/rails/backtrace_cleaner.rb:29>], @silencers=[#<Proc:0x007fcb89f0acd8@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.5/lib/rails/backtrace_cleaner.rb:19>], @root="/Users/jorgesilva/Dev/oauthapp/">, "action_dispatch.key_generator"=>#<ActiveSupport::CachingKeyGenerator:0x007fcb8d48a0c0 @key_generator=#<ActiveSupport::KeyGenerator:0x007fcb8d48a110 @secret="5d8d3d0aba1bc30360ee371e2a65cd6233620fd9f6cd7536142f2e4ec0981f510a4f5d9c337a7eb4a48f108afc504ddf17a142dc269567ae1055785b71c89b30", @iterations=1000>, @cache_keys=#<ThreadSafe::Cache:0x007fcb8d48a098 @backend={"signed_global_ids64"=>"}c\xF5J\x12\xD6\xFD\xFD\xCD\x8Aap\xC0\x9E\xD4\xDE\x16\xD7\xFA\xDC\fSt\x90\xC2q\xCED[}\xD1\xD0\xE3\x18\xE1\xAC6^\xE7\x13\\\xAB\x9B\a\xC5\xE15$\x88\xBF\xDDZ5`C\xFF.\xC3\x98s\x9F+@L", "encrypted cookie64"=>"\xD4\xEC\x8F\xDF^\xC6P\xD1\xD5\x82q\x93j\x0EV\x8Bp$\x8C$]Gq\xEDmY\x8C\n\xDF*U\xF7\xD6\xFB\x1F\xDE\xB4\xDE|Yb+\x14\xD1\xD6yq\xB0\xEE\xDF\r\xB5\xDC\n\xE1I\x12M\x15d\xC8\xAEV$", "signed encrypted cookie64"=>"\x0F;\x9F\x17\xD3:\xF3<\x1D=\b\np\xA6e/\xDF\x06\xD9\x8C\xDCp\x13\xFA@\x82\x8D\xB93O\xE3\x1Az&(\xB3g3N\x88\xC6\x98\xB7\xCB\x9A\xD8F\x8F\x9F\xE2\t\xB4Is\x803\xCE\x0E|\xDF\x9D\xC8\xF5\xEE"}, @default_proc=nil>>, "action_dispatch.http_auth_salt"=>"http authentication", "action_dispatch.signed_cookie_salt"=>"signed cookie", "action_dispatch.encrypted_cookie_salt"=>"encrypted cookie", "action_dispatch.encrypted_signed_cookie_salt"=>"signed encrypted cookie", "action_dispatch.cookies_serializer"=>:json, "action_dispatch.cookies_digest"=>nil, "ROUTES_70256077721580_SCRIPT_NAME"=>"", "action_dispatch.request_id"=>"44b7b31a-048c-4781-b2e2-c6e2e16496d4", "action_dispatch.remote_ip"=>#<ActionDispatch::RemoteIp::GetIp:0x007fcb9104a970 @env={...}, @check_ip=true, @proxies=[#<IPAddr: IPv4:127.0.0.1/255.255.255.255>, #<IPAddr: IPv6:0000:0000:0000:0000:0000:0000:0000:0001/ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff>, #<IPAddr: IPv6:fc00:0000:0000:0000:0000:0000:0000:0000/fe00:0000:0000:0000:0000:0000:0000:0000>, #<IPAddr: IPv4:10.0.0.0/255.0.0.0>, #<IPAddr: IPv4:172.16.0.0/255.240.0.0>, #<IPAddr: IPv4:192.168.0.0/255.255.0.0>]>, "rack.session"=>#<ActionDispatch::Request::Session:0x007fcb90ac3a88 @by=#<ActionDispatch::Session::CookieStore:0x007fcb89d61be8 @app=#<ActionDispatch::Flash:0x007fcb89d61c10 @app=#<ActionDispatch::ParamsParser:0x007fcb89d61d00 @app=#<Rack::Head:0x007fcb89d61d28 @app=#<Rack::ConditionalGet:0x007fcb89d61d50 @app=#<Rack::ETag:0x007fcb89d61d78 @app=#<OmniAuth::Builder:0x007fcb89d68060 @options=nil, @warmup=nil, @run=#<ActionDispatch::Routing::RouteSet:0x007fcb891c9fd8>, @map=nil, @use=[#<Proc:0x007fcb89d635b0@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:86>, #<Proc:0x007fcb89d62e30@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:86>, #<Proc:0x007fcb89d62480@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:86>, #<Proc:0x007fcb89d61da0@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:86>]>, @cache_control="max-age=0, private, must-revalidate", @no_cache_control="no-cache">>>, @parsers={#<Mime::Type:0x007fcb88b8cc10 @synonyms=["text/x-json", "application/jsonrequest"], @symbol=:json, @string="application/json">=>:json}>>, @default_options={:path=>"/", :domain=>nil, :expire_after=>nil, :secure=>false, :httponly=>true, :defer=>false, :renew=>false}, @key="_oauthapp_session", @cookie_only=true>, @env={...}, @delegate={"session_id"=>"5a2adda8af0c68abb598ab591687ee18", "_csrf_token"=>"jEMgAvr7CX0ODNjwdI41zjcm+vFEpGKU4hW2kdrYOzM=", "oauth"=>{"twitter"=>{"callback_confirmed"=>true}}}, @loaded=true, @exists=nil>, "rack.session.options"=>#<ActionDispatch::Request::Session::Options:0x007fcb90ac3a38 @by=#<ActionDispatch::Session::CookieStore:0x007fcb89d61be8 @app=#<ActionDispatch::Flash:0x007fcb89d61c10 @app=#<ActionDispatch::ParamsParser:0x007fcb89d61d00 @app=#<Rack::Head:0x007fcb89d61d28 @app=#<Rack::ConditionalGet:0x007fcb89d61d50 @app=#<Rack::ETag:0x007fcb89d61d78 @app=#<OmniAuth::Builder:0x007fcb89d68060 @options=nil, @warmup=nil, @run=#<ActionDispatch::Routing::RouteSet:0x007fcb891c9fd8>, @map=nil, @use=[#<Proc:0x007fcb89d635b0@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:86>, #<Proc:0x007fcb89d62e30@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:86>, #<Proc:0x007fcb89d62480@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:86>, #<Proc:0x007fcb89d61da0@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/rack-1.6.4/lib/rack/builder.rb:86>]>, @cache_control="max-age=0, private, must-revalidate", @no_cache_control="no-cache">>>, @parsers={#<Mime::Type:0x007fcb88b8cc10 @synonyms=["text/x-json", "application/jsonrequest"], @symbol=:json, @string="application/json">=>:json}>>, @default_options={:path=>"/", :domain=>nil, :expire_after=>nil, :secure=>false, :httponly=>true, :defer=>false, :renew=>false}, @key="_oauthapp_session", @cookie_only=true>, @env={...}, @delegate={:path=>"/", :domain=>nil, :expire_after=>nil, :secure=>false, :httponly=>true, :defer=>false, :renew=>false, :id=>"5a2adda8af0c68abb598ab591687ee18"}>, "omniauth.strategy"=>#<OmniAuth::Strategies::Facebook>, "rack.request.cookie_hash"=>{"_oauthapp_session"=>"UzNTeTQxRWJSbS9nWXlKNjlObHRnNDQ4UHVsYllqYTBxMmhFRzd5VFdGcFBkNlVoc0wybHJjckM5bmM4WTRxMk50STZYZWJiNm9rbC9Ia1c4QUlic3lJNURLeFVZUFVTdUJjRVB0WWJHS0d6YmkzTUQwckVqdGtjL3dpV3lvamZGNm5yQTlJR0U4NE5Kb2lpcnRMM0p4TXg3dWduNUx4bHhnaStmRmxZQjhQWGdYNHcxTk1Iak5EQzlEMmxzdHltcXVPM0oxZTNTUFN3ME9XYmVieE53T3RWWGZyM0JlOFpjREhkUHdEbnoza3JkcURPL1ZCUEE3QmZ5Mm96RUhnQmVjcEQveVY0ZTlnTmVmd1krOFhnRE85VHR0c0g5OEJ2eEFSWCtaUzhkVGtnQ3p2QXYyN1VGRFNjdkdLZXBnZVl2V3o3WTNYNndrUFcyTTBEaWh4WEJvWE4wd1p6OFRjanBTVzNKbTllUjUxcTBBV1RROU5pWU93QmZRQTZadC8yclM3T1ZWYkM0OUdLTmQ2TE10blpCZz09LS11V2FRemR1NXlCWlhESTFGVlRkZDBnPT0=--d2d9ad784b6169b3e5baf6c57d1ff0c74003167a"}, "rack.request.cookie_string"=>"_oauthapp_session=UzNTeTQxRWJSbS9nWXlKNjlObHRnNDQ4UHVsYllqYTBxMmhFRzd5VFdGcFBkNlVoc0wybHJjckM5bmM4WTRxMk50STZYZWJiNm9rbC9Ia1c4QUlic3lJNURLeFVZUFVTdUJjRVB0WWJHS0d6YmkzTUQwckVqdGtjL3dpV3lvamZGNm5yQTlJR0U4NE5Kb2lpcnRMM0p4TXg3dWduNUx4bHhnaStmRmxZQjhQWGdYNHcxTk1Iak5EQzlEMmxzdHltcXVPM0oxZTNTUFN3ME9XYmVieE53T3RWWGZyM0JlOFpjREhkUHdEbnoza3JkcURPL1ZCUEE3QmZ5Mm96RUhnQmVjcEQveVY0ZTlnTmVmd1krOFhnRE85VHR0c0g5OEJ2eEFSWCtaUzhkVGtnQ3p2QXYyN1VGRFNjdkdLZXBnZVl2V3o3WTNYNndrUFcyTTBEaWh4WEJvWE4wd1p6OFRjanBTVzNKbTllUjUxcTBBV1RROU5pWU93QmZRQTZadC8yclM3T1ZWYkM0OUdLTmQ2TE10blpCZz09LS11V2FRemR1NXlCWlhESTFGVlRkZDBnPT0%3D--d2d9ad784b6169b3e5baf6c57d1ff0c74003167a", "action_dispatch.cookies"=>#<ActionDispatch::Cookies::CookieJar:0x007fcb90ac0ef0 @key_generator=#<ActiveSupport::CachingKeyGenerator:0x007fcb8d48a0c0 @key_generator=#<ActiveSupport::KeyGenerator:0x007fcb8d48a110 @secret="5d8d3d0aba1bc30360ee371e2a65cd6233620fd9f6cd7536142f2e4ec0981f510a4f5d9c337a7eb4a48f108afc504ddf17a142dc269567ae1055785b71c89b30", @iterations=1000>, @cache_keys=#<ThreadSafe::Cache:0x007fcb8d48a098 @backend={"signed_global_ids64"=>"}c\xF5J\x12\xD6\xFD\xFD\xCD\x8Aap\xC0\x9E\xD4\xDE\x16\xD7\xFA\xDC\fSt\x90\xC2q\xCED[}\xD1\xD0\xE3\x18\xE1\xAC6^\xE7\x13\\\xAB\x9B\a\xC5\xE15$\x88\xBF\xDDZ5`C\xFF.\xC3\x98s\x9F+@L", "encrypted cookie64"=>"\xD4\xEC\x8F\xDF^\xC6P\xD1\xD5\x82q\x93j\x0EV\x8Bp$\x8C$]Gq\xEDmY\x8C\n\xDF*U\xF7\xD6\xFB\x1F\xDE\xB4\xDE|Yb+\x14\xD1\xD6yq\xB0\xEE\xDF\r\xB5\xDC\n\xE1I\x12M\x15d\xC8\xAEV$", "signed encrypted cookie64"=>"\x0F;\x9F\x17\xD3:\xF3<\x1D=\b\np\xA6e/\xDF\x06\xD9\x8C\xDCp\x13\xFA@\x82\x8D\xB93O\xE3\x1Az&(\xB3g3N\x88\xC6\x98\xB7\xCB\x9A\xD8F\x8F\x9F\xE2\t\xB4Is\x803\xCE\x0E|\xDF\x9D\xC8\xF5\xEE"}, @default_proc=nil>>, @set_cookies={}, @delete_cookies={}, @host="127.0.0.1", @secure=false, @options={:signed_cookie_salt=>"signed cookie", :encrypted_cookie_salt=>"encrypted cookie", :encrypted_signed_cookie_salt=>"signed encrypted cookie", :secret_token=>nil, :secret_key_base=>"5d8d3d0aba1bc30360ee371e2a65cd6233620fd9f6cd7536142f2e4ec0981f510a4f5d9c337a7eb4a48f108afc504ddf17a142dc269567ae1055785b71c89b30", :upgrade_legacy_signed_cookies=>false, :serializer=>:json, :digest=>nil}, @cookies={"_oauthapp_session"=>"UzNTeTQxRWJSbS9nWXlKNjlObHRnNDQ4UHVsYllqYTBxMmhFRzd5VFdGcFBkNlVoc0wybHJjckM5bmM4WTRxMk50STZYZWJiNm9rbC9Ia1c4QUlic3lJNURLeFVZUFVTdUJjRVB0WWJHS0d6YmkzTUQwckVqdGtjL3dpV3lvamZGNm5yQTlJR0U4NE5Kb2lpcnRMM0p4TXg3dWduNUx4bHhnaStmRmxZQjhQWGdYNHcxTk1Iak5EQzlEMmxzdHltcXVPM0oxZTNTUFN3ME9XYmVieE53T3RWWGZyM0JlOFpjREhkUHdEbnoza3JkcURPL1ZCUEE3QmZ5Mm96RUhnQmVjcEQveVY0ZTlnTmVmd1krOFhnRE85VHR0c0g5OEJ2eEFSWCtaUzhkVGtnQ3p2QXYyN1VGRFNjdkdLZXBnZVl2V3o3WTNYNndrUFcyTTBEaWh4WEJvWE4wd1p6OFRjanBTVzNKbTllUjUxcTBBV1RROU5pWU93QmZRQTZadC8yclM3T1ZWYkM0OUdLTmQ2TE10blpCZz09LS11V2FRemR1NXlCWlhESTFGVlRkZDBnPT0=--d2d9ad784b6169b3e5baf6c57d1ff0c74003167a"}, @committed=false, @encrypted=#<ActionDispatch::Cookies::EncryptedCookieJar:0x007fcb90ac07e8 @parent_jar=#<ActionDispatch::Cookies::CookieJar:0x007fcb90ac0ef0 ...>, @options={:signed_cookie_salt=>"signed cookie", :encrypted_cookie_salt=>"encrypted cookie", :encrypted_signed_cookie_salt=>"signed encrypted cookie", :secret_token=>nil, :secret_key_base=>"5d8d3d0aba1bc30360ee371e2a65cd6233620fd9f6cd7536142f2e4ec0981f510a4f5d9c337a7eb4a48f108afc504ddf17a142dc269567ae1055785b71c89b30", :upgrade_legacy_signed_cookies=>false, :serializer=>:json, :digest=>nil}, @encryptor=#<ActiveSupport::MessageEncryptor:0x007fcb90ac0680 @secret="\xD4\xEC\x8F\xDF^\xC6P\xD1\xD5\x82q\x93j\x0EV\x8Bp$\x8C$]Gq\xEDmY\x8C\n\xDF*U\xF7\xD6\xFB\x1F\xDE\xB4\xDE|Yb+\x14\xD1\xD6yq\xB0\xEE\xDF\r\xB5\xDC\n\xE1I\x12M\x15d\xC8\xAEV$", @sign_secret="\x0F;\x9F\x17\xD3:\xF3<\x1D=\b\np\xA6e/\xDF\x06\xD9\x8C\xDCp\x13\xFA@\x82\x8D\xB93O\xE3\x1Az&(\xB3g3N\x88\xC6\x98\xB7\xCB\x9A\xD8F\x8F\x9F\xE2\t\xB4Is\x803\xCE\x0E|\xDF\x9D\xC8\xF5\xEE", @cipher="aes-256-cbc", @verifier=#<ActiveSupport::MessageVerifier:0x007fcb90ac05b8 @secret="\x0F;\x9F\x17\xD3:\xF3<\x1D=\b\np\xA6e/\xDF\x06\xD9\x8C\xDCp\x13\xFA@\x82\x8D\xB93O\xE3\x1Az&(\xB3g3N\x88\xC6\x98\xB7\xCB\x9A\xD8F\x8F\x9F\xE2\t\xB4Is\x803\xCE\x0E|\xDF\x9D\xC8\xF5\xEE", @digest="SHA1", @serializer=ActiveSupport::MessageEncryptor::NullSerializer>, @serializer=ActiveSupport::MessageEncryptor::NullSerializer>>, @signed_or_encrypted=#<ActionDispatch::Cookies::EncryptedCookieJar:0x007fcb90ac07e8 @parent_jar=#<ActionDispatch::Cookies::CookieJar:0x007fcb90ac0ef0 ...>, @options={:signed_cookie_salt=>"signed cookie", :encrypted_cookie_salt=>"encrypted cookie", :encrypted_signed_cookie_salt=>"signed encrypted cookie", :secret_token=>nil, :secret_key_base=>"5d8d3d0aba1bc30360ee371e2a65cd6233620fd9f6cd7536142f2e4ec0981f510a4f5d9c337a7eb4a48f108afc504ddf17a142dc269567ae1055785b71c89b30", :upgrade_legacy_signed_cookies=>false, :serializer=>:json, :digest=>nil}, @encryptor=#<ActiveSupport::MessageEncryptor:0x007fcb90ac0680 @secret="\xD4\xEC\x8F\xDF^\xC6P\xD1\xD5\x82q\x93j\x0EV\x8Bp$\x8C$]Gq\xEDmY\x8C\n\xDF*U\xF7\xD6\xFB\x1F\xDE\xB4\xDE|Yb+\x14\xD1\xD6yq\xB0\xEE\xDF\r\xB5\xDC\n\xE1I\x12M\x15d\xC8\xAEV$", @sign_secret="\x0F;\x9F\x17\xD3:\xF3<\x1D=\b\np\xA6e/\xDF\x06\xD9\x8C\xDCp\x13\xFA@\x82\x8D\xB93O\xE3\x1Az&(\xB3g3N\x88\xC6\x98\xB7\xCB\x9A\xD8F\x8F\x9F\xE2\t\xB4Is\x803\xCE\x0E|\xDF\x9D\xC8\xF5\xEE", @cipher="aes-256-cbc", @verifier=#<ActiveSupport::MessageVerifier:0x007fcb90ac05b8 @secret="\x0F;\x9F\x17\xD3:\xF3<\x1D=\b\np\xA6e/\xDF\x06\xD9\x8C\xDCp\x13\xFA@\x82\x8D\xB93O\xE3\x1Az&(\xB3g3N\x88\xC6\x98\xB7\xCB\x9A\xD8F\x8F\x9F\xE2\t\xB4Is\x803\xCE\x0E|\xDF\x9D\xC8\xF5\xEE", @digest="SHA1", @serializer=ActiveSupport::MessageEncryptor::NullSerializer>, @serializer=ActiveSupport::MessageEncryptor::NullSerializer>>>, "action_dispatch.request.unsigned_session_cookie"=>{"session_id"=>"5a2adda8af0c68abb598ab591687ee18", "_csrf_token"=>"jEMgAvr7CX0ODNjwdI41zjcm+vFEpGKU4hW2kdrYOzM=", "oauth"=>{"twitter"=>{"callback_confirmed"=>true}}, "omniauth.params"=>{}, "omniauth.origin"=>"http://127.0.0.1:8080/", "omniauth.state"=>"b9e703ae465ec52228343fcb0284e09132680f53164d8997"}, "omniauth.origin"=>"http://127.0.0.1:8080/", "omniauth.params"=>{}, "rack.request.query_string"=>"code=AQBTb-sCIdvT-XhWtrAwAW_rAPNXESqibHxXrYDLl_IvBqt4Lo5vEQJvY6iVLkDtyhyBuGpfmJFqV7H00qwau0_IuAT-rQNc7BlRm_5n79xUjLNOftRFFyIohT3ys4tcVb9MpSRwLN4sQM6W4Y4J9U2D6VrDt8h8oVDApqqe93h_plwyMgrvaqDMHrGLE61TV2vyCa0KMIYevT-zIsnrDo41kviSBehBEVdweyMTDQDqQLLyuYcIONcowIF8jn0xJJVhLbUVA-jpfKIAGkfzFGryz209MB3E2SxGkJW15TDWhuhxbIC2Ra69VA4NMAoaxHXFRrpI2c2BXHdsNfTZGqDlhyUVpoiAjSP8XnfHICF22g&state=b9e703ae465ec52228343fcb0284e09132680f53164d8997", "rack.request.query_hash"=>{"code"=>"AQBTb-sCIdvT-XhWtrAwAW_rAPNXESqibHxXrYDLl_IvBqt4Lo5vEQJvY6iVLkDtyhyBuGpfmJFqV7H00qwau0_IuAT-rQNc7BlRm_5n79xUjLNOftRFFyIohT3ys4tcVb9MpSRwLN4sQM6W4Y4J9U2D6VrDt8h8oVDApqqe93h_plwyMgrvaqDMHrGLE61TV2vyCa0KMIYevT-zIsnrDo41kviSBehBEVdweyMTDQDqQLLyuYcIONcowIF8jn0xJJVhLbUVA-jpfKIAGkfzFGryz209MB3E2SxGkJW15TDWhuhxbIC2Ra69VA4NMAoaxHXFRrpI2c2BXHdsNfTZGqDlhyUVpoiAjSP8XnfHICF22g", "state"=>"b9e703ae465ec52228343fcb0284e09132680f53164d8997"}, "omniauth.auth"=>#<OmniAuth::AuthHash credentials=#<OmniAuth::AuthHash expires=true expires_at=1458391760 token="CAALTeWsMWZCcBAJdHZBKTNlt9rEXx1ZAUSHIy6glzPVWi0ZApBCdl348YLX2rbTDt2ApZCBHevcpZATdFP5xSk6TUfev0zv0YSYKBtixNs6bhtWIAzxHTSp0qmO0B3ljdrkfeDNeRUnLOqvnUEf4ZCSt9kjk6OwX7H2t02LQd0msazEnWRShZCpoPVR6NgvhuiBC6ZCbvhGLG8gZDZD"> extra=#<OmniAuth::AuthHash raw_info=#<OmniAuth::AuthHash id="10206446938306403" link="https://www.facebook.com/app_scoped_user_id/10206446938306403/" name="Jorge Silva">> info=#<OmniAuth::AuthHash::InfoHash image="https://graph.facebook.com/10206446938306403/picture" name="Jorge Silva" urls=#<OmniAuth::AuthHash Facebook="https://www.facebook.com/app_scoped_user_id/10206446938306403/">> provider="facebook" uid="10206446938306403">, "action_dispatch.request.path_parameters"=>{:controller=>"sessions", :action=>"create", :provider=>"facebook"}, "action_controller.instance"=>#<SessionsController:0x007fcb9085bb88 @_action_has_layout=true, @_routes=nil, @_headers={"Content-Type"=>"text/html"}, @_status=200, @_request=#<ActionDispatch::Request:0x007fcb9085ba98 ...>, @_response=#<ActionDispatch::Response:0x007fcb9085ba70 @mon_owner=nil, @mon_count=0, @mon_mutex=#<Mutex:0x007fcb9085b9a8>, @stream=#<ActionDispatch::Response::Buffer:0x007fcb9085b908 @response=#<ActionDispatch::Response:0x007fcb9085ba70 ...>, @buf=[], @closed=false>, @header={"X-Frame-Options"=>"SAMEORIGIN", "X-XSS-Protection"=>"1; mode=block", "X-Content-Type-Options"=>"nosniff"}, @status=200, @sending_file=false, @blank=false, @cv=#<MonitorMixin::ConditionVariable:0x007fcb9085b8e0 @monitor=#<ActionDispatch::Response:0x007fcb9085ba70 ...>, @cond=#<Thread::ConditionVariable:0x007fcb9085b8b8>>, @committed=false, @sending=false, @sent=false, @content_type=nil, @charset=nil, @cache_control={}, @etag=nil, @request=#<ActionDispatch::Request:0x007fcb9085ba98 ...>>, @_env={...}, @_lookup_context=#<ActionView::LookupContext:0x007fcb9085b5e8 @details_key=nil, @details={:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}, @skip_default_locale=false, @cache=true, @prefixes=["sessions", "application"], @rendered_format=nil, @view_paths=#<ActionView::PathSet:0x007fcb9085b570 @paths=[#<ActionView::OptimizedFileSystemResolver:0x007fcb891b8080 @pattern=":prefix/:action{.:locale,}{.:formats,}{+:variants,}{.:handlers,}", @cache=#<ActionView::Resolver::Cache:0x007fcb891b8058 @data=#<ActionView::Resolver::Cache::SmallCache:0x007fcb891b8030 @backend={#<ActionView::LookupContext::DetailsKey:0x007fcb8d2cb3b0 @hash=-1031402212464187240>=>#<ActionView::Resolver::Cache::SmallCache:0x007fcb8d2c9c68 @backend={"index"=>#<ActionView::Resolver::Cache::SmallCache:0x007fcb8d2c9b00 @backend={"pages"=>#<ActionView::Resolver::Cache::SmallCache:0x007fcb8d2c9948 @backend={false=>#<ActionView::Resolver::Cache::SmallCache:0x007fcb8d2c9790 @backend={[]=>[app/views/pages/index.html.erb]}, @default_proc=nil>}, @default_proc=#<Proc:0x007fcb8d382240@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionview-4.2.5/lib/action_view/template/resolver.rb:46 (lambda)>>}, @default_proc=#<Proc:0x007fcb8d382218@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionview-4.2.5/lib/action_view/template/resolver.rb:47 (lambda)>>, "pages"=>#<ActionView::Resolver::Cache::SmallCache:0x007fcb8d2c37c8 @backend={"layouts"=>#<ActionView::Resolver::Cache::SmallCache:0x007fcb8d2c3660 @backend={false=>#<ActionView::Resolver::Cache::SmallCache:0x007fcb8d2c3520 @backend={}, @default_proc=nil>}, @default_proc=#<Proc:0x007fcb8d382240@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionview-4.2.5/lib/action_view/template/resolver.rb:46 (lambda)>>}, @default_proc=#<Proc:0x007fcb8d382218@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionview-4.2.5/lib/action_view/template/resolver.rb:47 (lambda)>>, "application"=>#<ActionView::Resolver::Cache::SmallCache:0x007fcb8d2c1c48 @backend={"layouts"=>#<ActionView::Resolver::Cache::SmallCache:0x007fcb8d2c1b08 @backend={false=>#<ActionView::Resolver::Cache::SmallCache:0x007fcb8d2c19f0 @backend={[]=>[app/views/layouts/application.html.erb]}, @default_proc=nil>}, @default_proc=#<Proc:0x007fcb8d382240@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionview-4.2.5/lib/action_view/template/resolver.rb:46 (lambda)>>}, @default_proc=#<Proc:0x007fcb8d382218@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionview-4.2.5/lib/action_view/template/resolver.rb:47 (lambda)>>}, @default_proc=#<Proc:0x007fcb8d3821f0@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionview-4.2.5/lib/action_view/template/resolver.rb:48 (lambda)>>}, @default_proc=#<Proc:0x007fcb8d3821a0@/Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionview-4.2.5/lib/action_view/template/resolver.rb:49 (lambda)>>>, @path="/Users/jorgesilva/Dev/oauthapp/app/views">]>>, @_action_name="create", @_response_body=nil, @marked_for_same_origin_verification=true, @_config={}>, "action_dispatch.request.content_type"=>nil, "action_dispatch.request.request_parameters"=>{}, "action_dispatch.request.query_parameters"=>{"code"=>"AQBTb-sCIdvT-XhWtrAwAW_rAPNXESqibHxXrYDLl_IvBqt4Lo5vEQJvY6iVLkDtyhyBuGpfmJFqV7H00qwau0_IuAT-rQNc7BlRm_5n79xUjLNOftRFFyIohT3ys4tcVb9MpSRwLN4sQM6W4Y4J9U2D6VrDt8h8oVDApqqe93h_plwyMgrvaqDMHrGLE61TV2vyCa0KMIYevT-zIsnrDo41kviSBehBEVdweyMTDQDqQLLyuYcIONcowIF8jn0xJJVhLbUVA-jpfKIAGkfzFGryz209MB3E2SxGkJW15TDWhuhxbIC2Ra69VA4NMAoaxHXFRrpI2c2BXHdsNfTZGqDlhyUVpoiAjSP8XnfHICF22g", "state"=>"b9e703ae465ec52228343fcb0284e09132680f53164d8997"}, "action_dispatch.request.parameters"=>{"code"=>"AQBTb-sCIdvT-XhWtrAwAW_rAPNXESqibHxXrYDLl_IvBqt4Lo5vEQJvY6iVLkDtyhyBuGpfmJFqV7H00qwau0_IuAT-rQNc7BlRm_5n79xUjLNOftRFFyIohT3ys4tcVb9MpSRwLN4sQM6W4Y4J9U2D6VrDt8h8oVDApqqe93h_plwyMgrvaqDMHrGLE61TV2vyCa0KMIYevT-zIsnrDo41kviSBehBEVdweyMTDQDqQLLyuYcIONcowIF8jn0xJJVhLbUVA-jpfKIAGkfzFGryz209MB3E2SxGkJW15TDWhuhxbIC2Ra69VA4NMAoaxHXFRrpI2c2BXHdsNfTZGqDlhyUVpoiAjSP8XnfHICF22g", "state"=>"b9e703ae465ec52228343fcb0284e09132680f53164d8997", "controller"=>"sessions", "action"=>"create", "provider"=>"facebook"}, "action_dispatch.request.formats"=>[#<Mime::Type:0x007fcb88b95a68 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">]}, @filtered_parameters={"code"=>"AQBTb-sCIdvT-XhWtrAwAW_rAPNXESqibHxXrYDLl_IvBqt4Lo5vEQJvY6iVLkDtyhyBuGpfmJFqV7H00qwau0_IuAT-rQNc7BlRm_5n79xUjLNOftRFFyIohT3ys4tcVb9MpSRwLN4sQM6W4Y4J9U2D6VrDt8h8oVDApqqe93h_plwyMgrvaqDMHrGLE61TV2vyCa0KMIYevT-zIsnrDo41kviSBehBEVdweyMTDQDqQLLyuYcIONcowIF8jn0xJJVhLbUVA-jpfKIAGkfzFGryz209MB3E2SxGkJW15TDWhuhxbIC2Ra69VA4NMAoaxHXFRrpI2c2BXHdsNfTZGqDlhyUVpoiAjSP8XnfHICF22g", "state"=>"b9e703ae465ec52228343fcb0284e09132680f53164d8997", "controller"=>"sessions", "action"=>"create", "provider"=>"facebook"}, @filtered_env=nil, @filtered_path=nil, @protocol=nil, @port=nil, @method=nil, @request_method="GET", @remote_ip=nil, @original_fullpath=nil, @fullpath="/auth/facebook/callback?code=AQBTb-sCIdvT-XhWtrAwAW_rAPNXESqibHxXrYDLl_IvBqt4Lo5vEQJvY6iVLkDtyhyBuGpfmJFqV7H00qwau0_IuAT-rQNc7BlRm_5n79xUjLNOftRFFyIohT3ys4tcVb9MpSRwLN4sQM6W4Y4J9U2D6VrDt8h8oVDApqqe93h_plwyMgrvaqDMHrGLE61TV2vyCa0KMIYevT-zIsnrDo41kviSBehBEVdweyMTDQDqQLLyuYcIONcowIF8jn0xJJVhLbUVA-jpfKIAGkfzFGryz209MB3E2SxGkJW15TDWhuhxbIC2Ra69VA4NMAoaxHXFRrpI2c2BXHdsNfTZGqDlhyUVpoiAjSP8XnfHICF22g&state=b9e703ae465ec52228343fcb0284e09132680f53164d8997", @ip=nil, @uuid=nil>):
+  app/controllers/sessions_controller.rb:17:in `create'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (127.8ms)
+
+
+Started GET "/auth/facebook/callback?code=AQBTb-sCIdvT-XhWtrAwAW_rAPNXESqibHxXrYDLl_IvBqt4Lo5vEQJvY6iVLkDtyhyBuGpfmJFqV7H00qwau0_IuAT-rQNc7BlRm_5n79xUjLNOftRFFyIohT3ys4tcVb9MpSRwLN4sQM6W4Y4J9U2D6VrDt8h8oVDApqqe93h_plwyMgrvaqDMHrGLE61TV2vyCa0KMIYevT-zIsnrDo41kviSBehBEVdweyMTDQDqQLLyuYcIONcowIF8jn0xJJVhLbUVA-jpfKIAGkfzFGryz209MB3E2SxGkJW15TDWhuhxbIC2Ra69VA4NMAoaxHXFRrpI2c2BXHdsNfTZGqDlhyUVpoiAjSP8XnfHICF22g&state=b9e703ae465ec52228343fcb0284e09132680f53164d8997" for 127.0.0.1 at 2016-01-19 18:14:21 +0000
+
+OAuth2::Error (: 
+{"error":{"message":"This authorization code has been used.","type":"OAuthException","code":100,"fbtrace_id":"CR2EnF34VtK"}}):
+  oauth2 (1.0.0) lib/oauth2/client.rb:113:in `request'
+  oauth2 (1.0.0) lib/oauth2/client.rb:138:in `get_token'
+  oauth2 (1.0.0) lib/oauth2/strategy/auth_code.rb:29:in `get_token'
+  omniauth-oauth2 (1.3.1) lib/omniauth/strategies/oauth2.rb:93:in `build_access_token'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:114:in `build_access_token'
+  omniauth-oauth2 (1.3.1) lib/omniauth/strategies/oauth2.rb:77:in `callback_phase'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:71:in `block in callback_phase'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:135:in `with_authorization_code!'
+  omniauth-facebook (3.0.0) lib/omniauth/strategies/facebook.rb:70:in `callback_phase'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.3.1) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.3.1) lib/omniauth/builder.rb:63:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (76.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (163.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-19 18:14:26 +0000
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (5.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (21.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 91ms (Views: 83.4ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2016-01-19 18:14:26 +0000
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2016-01-19 18:14:26 +0000
+
+
+Started GET "/assets/bootstrap/theme" for 127.0.0.1 at 2016-01-19 18:14:26 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/theme"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (95.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (142.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2016-01-19 18:15:03 +0000
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2016-01-19 18:15:03 +0000
+
+
+Started GET "/auth/facebook/callback?code=AQBrRryBOflMBoOXf5IzoLWVPMpY7BcNpi3xiYSAQ_In4MVax7od-OhtcxwZ1qVH3E-3gQ3zd2cUB0zJXSDAdubQX1biljnQFRb7qh0UySSGme_ELLFBxgDKwqRlk-biB0k86uHHsHAlauEDxUk6dxsa2bBy-FzBte3lB3K_20VCAGy0C2ba9QIe1c4lXFrwvAfZKfAtX0jCzMDrWmU0UBulWhjkDF5pst8jB8scehh40Lje3mCA1D580Ioej-7J9SxjKIqcmPHsUTHvojz4zslUEZMgh1w_kIBav0v0Vf99ah8JOS-I4XXr9V1cg8pRUaRJwPVgR3lB1dUbSBSQkvWvqZDr472zlhqDmdy9bHTeng&state=4af45a9c55220437d10c1471480fd2bea26cc27105aa23ee" for 127.0.0.1 at 2016-01-19 18:15:03 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBrRryBOflMBoOXf5IzoLWVPMpY7BcNpi3xiYSAQ_In4MVax7od-OhtcxwZ1qVH3E-3gQ3zd2cUB0zJXSDAdubQX1biljnQFRb7qh0UySSGme_ELLFBxgDKwqRlk-biB0k86uHHsHAlauEDxUk6dxsa2bBy-FzBte3lB3K_20VCAGy0C2ba9QIe1c4lXFrwvAfZKfAtX0jCzMDrWmU0UBulWhjkDF5pst8jB8scehh40Lje3mCA1D580Ioej-7J9SxjKIqcmPHsUTHvojz4zslUEZMgh1w_kIBav0v0Vf99ah8JOS-I4XXr9V1cg8pRUaRJwPVgR3lB1dUbSBSQkvWvqZDr472zlhqDmdy9bHTeng", "state"=>"4af45a9c55220437d10c1471480fd2bea26cc27105aa23ee", "provider"=>"facebook"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+RuntimeError (#<OmniAuth::AuthHash credentials=#<OmniAuth::AuthHash expires=true expires_at=1458391760 token="CAALTeWsMWZCcBAIoQWmnDGDGmd0GZCWf7tCFTz9dErjPjZB2vYuwe6ZA9bgNI9qodcWavMXUZBqcZBmwQ4M4UuBKDZBULPN4ww05ub9ZCVdionYZA0bDwSu3gZBJxBEEep2N4RrNBzcP0efrZApDoaCFK3LdQZCYfD6uB68O88Uf53HP2LnfR7aMLHjOLEXfbPuuwDsylkBuQZCem7gZDZD"> extra=#<OmniAuth::AuthHash raw_info=#<OmniAuth::AuthHash id="10206446938306403" link="https://www.facebook.com/app_scoped_user_id/10206446938306403/" name="Jorge Silva">> info=#<OmniAuth::AuthHash::InfoHash image="https://graph.facebook.com/10206446938306403/picture" name="Jorge Silva" urls=#<OmniAuth::AuthHash Facebook="https://www.facebook.com/app_scoped_user_id/10206446938306403/">> provider="facebook" uid="10206446938306403">):
+  app/controllers/sessions_controller.rb:17:in `create'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.1ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (76.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (164.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-19 18:18:40 +0000
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (16.1ms)
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 89ms (Views: 83.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2016-01-19 18:18:41 +0000
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2016-01-19 18:18:41 +0000
+
+
+Started GET "/assets/bootstrap/theme" for 127.0.0.1 at 2016-01-19 18:18:41 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/theme"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (125.0ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (86.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (186.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-19 18:19:39 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (28.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 469ms (Views: 450.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application.self-734ca6ad3b4a6e573f262fd05d47d9d2d4830355aa0c0de2d7534769251f5087.css?body=1" for 127.0.0.1 at 2016-01-19 18:19:40 +0000
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-01-19 18:19:40 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-01-19 18:19:40 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-19 18:19:40 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-19 18:19:40 +0000
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2016-01-19 18:19:40 +0000
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2016-01-19 18:19:40 +0000
+
+
+Started GET "/assets/bootstrap/theme" for 127.0.0.1 at 2016-01-19 18:19:40 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/theme"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (35.1ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (162.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (87.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (191.6ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2016-01-19 18:19:42 +0000
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2016-01-19 18:19:43 +0000
+
+
+Started GET "/auth/facebook/callback?code=AQBkKcsxxpIuOSP-9KL7j45ZS8i8hhovRhQPCcOyB_RD0bozSgFv0jXzmFUYaB2XrIK55isP3WbD9DHp1rnfSMS4Hc08fMJEPXp6Ws0_bIp7_22Hpe99-LJnIXB0MrWlxMH1xOQ460kzSuyttbhsn6hj7Yfwk-P2__1h84os8kG27NfGzgvLt5CLk6FeenyNCieN8mlKl472kuhsVWkCZZyNrng2zLySxGTDQS1cQHyN8JDBY_tXuRj_jpYaFurLfxJ-3N7a4JAIrv1fF9iwPHhR6eFse6ssmZ2iZ77qCNlMvrBj85k4mBqULzsiSqu2oi0y9XTK38JvJrMKpn2xgQ51PO2PokS3vuKnCT-niDibqA&state=c930573fe865e65b4ba775d4cb5d438ab0dd4209728e48c5" for 127.0.0.1 at 2016-01-19 18:19:43 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBkKcsxxpIuOSP-9KL7j45ZS8i8hhovRhQPCcOyB_RD0bozSgFv0jXzmFUYaB2XrIK55isP3WbD9DHp1rnfSMS4Hc08fMJEPXp6Ws0_bIp7_22Hpe99-LJnIXB0MrWlxMH1xOQ460kzSuyttbhsn6hj7Yfwk-P2__1h84os8kG27NfGzgvLt5CLk6FeenyNCieN8mlKl472kuhsVWkCZZyNrng2zLySxGTDQS1cQHyN8JDBY_tXuRj_jpYaFurLfxJ-3N7a4JAIrv1fF9iwPHhR6eFse6ssmZ2iZ77qCNlMvrBj85k4mBqULzsiSqu2oi0y9XTK38JvJrMKpn2xgQ51PO2PokS3vuKnCT-niDibqA", "state"=>"c930573fe865e65b4ba775d4cb5d438ab0dd4209728e48c5", "provider"=>"facebook"}
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."uid" = ? AND "users"."provider" = ? LIMIT 1  [["uid", "10206446938306403"], ["provider", "facebook"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://127.0.0.1:8080/
+Completed 302 Found in 55ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-19 18:19:44 +0000
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pages/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2016-01-19 18:19:44 +0000
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2016-01-19 18:19:44 +0000
+
+
+Started GET "/assets/bootstrap/theme" for 127.0.0.1 at 2016-01-19 18:19:44 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/theme"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (99.1ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (68.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (149.2ms)
+
+
+Started GET "/post/" for 127.0.0.1 at 2016-01-19 18:19:46 +0000
+Processing by SessionsController#post as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Redirected to https://www.facebook.com/dialog/share?app_id=795468393896951&display=popup&href=google.com&redirect_uri=https://pacific-brushlands-9551.herokuapp.com/post/validate
+Completed 403 Forbidden in 2ms (ActiveRecord: 0.6ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-01-19 18:19:51 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AvJOidvlPkCiARzcv3ZLqjCjI2QlYXZUbFsGE6DRWXOOsW6LIR43PawNxCzL+H5kB4XZlWHFFMCOTrCCegliQA=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Redirected to http://127.0.0.1:8080/
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-19 18:19:51 +0000
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2016-01-19 18:19:52 +0000
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2016-01-19 18:19:52 +0000
+
+
+Started GET "/assets/bootstrap/theme" for 127.0.0.1 at 2016-01-19 18:19:52 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/theme"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (66.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (155.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-19 18:19:54 +0000
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2016-01-19 18:19:54 +0000
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2016-01-19 18:19:54 +0000
+
+
+Started GET "/assets/bootstrap/theme" for 127.0.0.1 at 2016-01-19 18:19:54 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/theme"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (86.9ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (66.6ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jorgesilva/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (142.5ms)
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 3]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  [1m[35m (2.7ms)[0m  commit transaction

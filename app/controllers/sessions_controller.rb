@@ -12,7 +12,9 @@ class SessionsController < ApplicationController
     #             :ca_file => ENV['SSL_CERT_FILE'] +"/ca-bundle.crt",
     #             :ca_path => ENV['SSL_CERT_FILE']
     #           }
-    #         }} 
+    #         }}
+
+      #raise request.env['omniauth.auth'].inspect
 
     begin
       @user = User.from_omniauth(request.env['omniauth.auth'])
@@ -89,6 +91,8 @@ private
   end
 
   def validate_facebook
+    base_url = "http://graph.facebook.com/v2.5/me/feed?"
+    params = "access_token=#{current_user.access_token}"
     profile = RestClient.get(current_user.url)
     raise profile.inspect
   end

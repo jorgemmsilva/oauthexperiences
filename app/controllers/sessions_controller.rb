@@ -4,6 +4,7 @@ class SessionsController < ApplicationController
     # req = request.env['omniauth.auth']
     # raise req.inspect
     #raise request.inspect
+
     
 
     # access_token = request.env['omniauth.auth']['token']
@@ -93,7 +94,7 @@ private
   def validate_facebook
     base_url = "http://graph.facebook.com/v2.5/me/feed?"
     params = "access_token=#{current_user.access_token}"
-    profile = RestClient.get(current_user.url)
+    profile = RestClient.get(base_url+params)
     raise profile.inspect
   end
 
